@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Bespoke | StartUp Brand-Making Process</title>
+<style>
+@font-face{font-family:'IDG';src:url(f100.ttf) format('truetype');font-weight:100;font-display:swap}
+@font-face{font-family:'IDG';src:url(f300.ttf) format('truetype');font-weight:300;font-display:swap}
+@font-face{font-family:'IDG';src:url(f400.ttf) format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'IDG';src:url(f500.ttf) format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:'IDG';src:url(f600.ttf) format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'IDG';src:url(f700.ttf) format('truetype');font-weight:700;font-display:swap}
+:root{--bg:#1b1b1d;--ink:#ffffff;--mut:#9d9da3;--line:rgba(255,255,255,.16);--soft:rgba(255,255,255,.09)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'IDG',Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block}
+a{color:inherit}
+::selection{background:#fff;color:#1b1b1d}
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+@media(min-width:768px){.wrap{padding:0 48px}}
+.kick{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;pointer-events:none;background:rgba(255,255,255,.07)}
+.progress .bar{height:100%;width:0;background:#fff}
+.progress img{position:absolute;top:-5px;left:0;width:12px;transform:translateX(-50%)}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:20px 20px 44px;position:relative;overflow:hidden;background:radial-gradient(120% 70% at 50% -10%,rgba(255,255,255,.09),rgba(255,255,255,0) 60%)}
+@media(min-width:768px){.hero{padding:32px 48px 56px}}
+.hero-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.hero-top img{width:30px;height:auto}
+.hero-top a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--mut);border-bottom:1px solid var(--line);padding-bottom:3px}
+.hero-mid{padding:12vh 0 8vh;position:relative;z-index:1}
+.hero .kick{display:block;margin-bottom:22px}
+.hero h1{font-weight:600;font-size:clamp(3.2rem,13vw,9.5rem);line-height:.94;letter-spacing:-.025em}
+.hero .intro{margin-top:26px;font-weight:300;font-size:clamp(1.05rem,2.4vw,1.5rem);line-height:1.45;max-width:32ch;color:#cfcfd4}
+.stats{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);position:relative;z-index:1}
+.stats div{padding:16px 0 4px 14px;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#d8d8dc;border-left:1px solid var(--line)}
+.stats div:nth-child(odd){border-left:none;padding-left:0}
+@media(min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}.stats div:nth-child(odd){border-left:1px solid var(--line);padding-left:14px}.stats div:first-child{border-left:none;padding-left:0}}
+.hero-cta{margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;position:relative;z-index:1}
+.btn{display:inline-block;background:#fff;color:#1b1b1d;text-decoration:none;font-weight:500;font-size:15px;padding:14px 34px;border-radius:4rem}
+.tminus{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}
+</style>
+<style>
+.dna{padding:110px 0 120px;border-top:1px solid var(--soft)}
+.dna h2{font-weight:600;font-size:clamp(2.1rem,6vw,4.2rem);letter-spacing:-.02em;line-height:1.05}
+.dna .sub{margin-top:14px;font-weight:300;font-size:clamp(1rem,2vw,1.3rem);color:var(--mut)}
+.diagram{position:relative;max-width:620px;margin:80px auto 0;aspect-ratio:1/0.92}
+.diagram .c{position:absolute;border:1.5px solid rgba(255,255,255,.75);border-radius:50%}
+.diagram .c1{width:58%;aspect-ratio:1;left:2%;top:0}
+.diagram .c2{width:58%;aspect-ratio:1;right:2%;top:0}
+.diagram .c3{width:58%;aspect-ratio:1;left:21%;bottom:0}
+.diagram .core{position:absolute;left:50%;top:37%;transform:translate(-50%,-50%);text-align:center;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;line-height:1.7}
+.diagram .lbl{position:absolute;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;line-height:1.6;white-space:nowrap;color:var(--mut)}
+.diagram .lbl::after{content:"";display:block;width:34px;height:1px;background:rgba(255,255,255,.4);margin-top:5px}
+.diagram .l-sales{left:0;top:26%}
+.diagram .l-perc{left:0;top:64%}
+.diagram .l-prod{left:5%;bottom:-2%}
+.diagram .l-team{right:0;top:26%;text-align:right}
+.diagram .l-adopt{right:0;top:64%;text-align:right}
+.diagram .l-mkt{right:5%;bottom:-2%;text-align:right}
+.diagram .l-team::after,.diagram .l-adopt::after,.diagram .l-mkt::after{margin-left:auto}
+.diagram .cap{position:absolute;font-weight:300;font-size:clamp(1rem,2.4vw,1.5rem);letter-spacing:-.01em}
+.diagram .cap1{left:13%;top:23%}
+.diagram .cap2{right:13%;top:23%;text-align:right}
+.diagram .cap3{left:50%;bottom:9%;transform:translateX(-50%);text-align:center}
+.process{padding:110px 0 100px;border-top:1px solid var(--soft)}
+.process h2{font-weight:600;font-size:clamp(2rem,5.6vw,4rem);letter-spacing:-.02em;line-height:1.05}
+.process .sub{margin-top:14px;font-weight:300;font-size:clamp(1rem,2vw,1.3rem);color:var(--mut)}
+.phases{margin-top:76px;position:relative}
+.phase{border-top:1px solid var(--line);padding:48px 0 56px;display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:900px){.phase{grid-template-columns:230px 1fr;gap:56px}}
+.phase .num{font-weight:100;font-size:clamp(6rem,10vw,9.5rem);line-height:.82;color:#fff}
+@supports(-webkit-text-stroke:1px black){.phase .num{color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.55)}}
+.phase .tcode{font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
+.phase h3{font-weight:500;font-size:clamp(1.25rem,2.4vw,1.75rem);letter-spacing:.1em;text-transform:uppercase;margin-bottom:26px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{border:1px solid rgba(255,255,255,.22);padding:11px 18px;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#dcdce0}
+.launch{background:#000;text-align:center;padding:140px 20px;border-top:1px solid var(--soft);position:relative;overflow:hidden}
+.launch::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 60%,rgba(255,255,255,.10),rgba(255,255,255,0) 70%)}
+.launch img{width:30px;margin:0 auto 28px;position:relative}
+.launch .tcode{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mut);position:relative}
+.launch h2{font-weight:600;font-size:clamp(3.6rem,15vw,10rem);letter-spacing:.05em;line-height:1;margin-top:16px;position:relative}
+.takeoffs{padding:110px 0;border-top:1px solid var(--soft)}
+.takeoffs h2{font-weight:600;font-size:clamp(2rem,5.6vw,4rem);letter-spacing:-.02em}
+.log{margin-top:70px}
+.entry{border-top:1px solid var(--line);padding:36px 12px 42px;display:grid;grid-template-columns:1fr;gap:24px;transition:background .3s ease}
+.entry:hover{background:rgba(255,255,255,.03)}
+@media(min-width:900px){.entry{grid-template-columns:280px 1fr;gap:60px;align-items:center}}
+.entry .chip{background:#fff;padding:26px 30px;display:flex;align-items:center;justify-content:center;min-height:100px}
+.entry .chip img{max-height:38px;max-width:100%;width:auto}
+.entry .ind{font-weight:500;font-size:14px}
+.entry .url{display:inline-block;margin-top:6px;font-size:14px;color:var(--mut);text-decoration:underline;text-underline-offset:3px}
+.entry p{margin-top:14px;font-weight:300;font-size:15.5px;line-height:1.6;max-width:54ch;color:#cfcfd4}
+footer{padding:100px 0 48px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:60px}
+@media(min-width:900px){.foot-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.foot-grid .fl img{width:34px;margin-bottom:22px}
+.foot-grid .fl h2{font-weight:600;font-size:32px}
+.foot-grid .fl .tag{margin-top:12px;font-weight:300;font-size:17px;line-height:1.55;color:#cfcfd4}
+.chip-yr{display:inline-block;margin-top:22px;border:1px solid rgba(255,255,255,.35);border-radius:4rem;padding:7px 18px;font-size:12px;letter-spacing:.08em;color:#dcdce0}
+.foot-grid .fr .big{font-weight:300;font-size:clamp(1.1rem,2.2vw,1.5rem);color:#cfcfd4}
+.foot-grid .fr .go{display:inline-block;margin-top:18px;font-weight:600;font-size:clamp(2rem,5.4vw,3.6rem);letter-spacing:-.02em;text-decoration:none;line-height:1.1}
+.foot-grid .fr .go span{border-bottom:2px solid #fff}
+.contact{margin-top:72px;border-top:1px solid var(--line);padding-top:36px;font-size:15px;line-height:2.05}
+.contact .nm{font-weight:500}
+.contact .rl{font-weight:300;color:var(--mut)}
+.contact a{text-decoration:underline;text-underline-offset:3px}
+.copy{margin-top:64px;font-size:12px;letter-spacing:.06em;color:var(--mut);text-align:right}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><div class="bar" id="bar"></div><img id="procket" src="rocket.png" alt=""></div>
+
+<header class="hero">
+  <div class="hero-top">
+    <img src="b-white.png" alt="Bespoke">
+    <a href="https://www.bespoke-agency.io/" target="_blank" rel="noopener">www.bespoke-agency.io</a>
+  </div>
+  <div class="hero-mid">
+    <span class="kick rv">The Bespoke Startup Brand-Making Process</span>
+    <h1 class="rv">We&rsquo;re Bespoke.</h1>
+    <p class="intro rv">We turn early-stage advanced and deep tech startups into powerhouse brands, winning pitches, &amp; unstoppable products.</p>
+  </div>
+  <div>
+    <div class="stats rv">
+      <div>70+ companies helped</div>
+      <div>9 major exits</div>
+      <div>2 IPOs</div>
+      <div>up to $100M raised</div>
+    </div>
+    <div class="hero-cta rv">
+      <a class="btn" href="mailto:annebenyehuda@gmail.com">Start a Project</a>
+      <span class="tminus">T-minus 3 months</span>
+    </div>
+  </div>
+</header>
+
+<section class="dna">
+  <div class="wrap">
+    <h2 class="rv">Influence makes a brand.</h2>
+    <p class="sub rv">Here&rsquo;s how it&rsquo;s made:</p>
+    <div class="diagram rv">
+      <div class="c c1"></div>
+      <div class="c c2"></div>
+      <div class="c c3"></div>
+      <div class="cap cap1">Strategy</div>
+      <div class="cap cap2">Visuals</div>
+      <div class="cap cap3">Story &amp;<br>Messaging</div>
+      <div class="core">Your<br>Brand<br>DNA</div>
+      <div class="lbl l-sales">Sales</div>
+      <div class="lbl l-perc">Perception</div>
+      <div class="lbl l-prod">Product<br>&amp; Technology</div>
+      <div class="lbl l-team">Your<br>Team</div>
+      <div class="lbl l-adopt">Adoption</div>
+      <div class="lbl l-mkt">Marketing &amp;<br>Social</div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <h2 class="rv">StartUp Brand-Making Process</h2>
+    <p class="sub rv">From concept to launch in just 3 months.</p>
+    <div class="phases">
+      <div class="phase rv">
+        <div class="num">1</div>
+        <div>
+          <div class="tcode">T-3</div>
+          <h3>Foundation</h3>
+          <div class="tags">
+            <span>Client Discovery</span><span>Competitive Research</span><span>Brand Strategy</span><span>Key Messaging &amp; Story</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase rv">
+        <div class="num">2</div>
+        <div>
+          <div class="tcode">T-2</div>
+          <h3>Visual Identity</h3>
+          <div class="tags">
+            <span>Trend Board</span><span>Logo Process</span><span>Visual Identity</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase rv">
+        <div class="num">3</div>
+        <div>
+          <div class="tcode">T-1</div>
+          <h3>Web</h3>
+          <div class="tags">
+            <span>Web Content</span><span>Web Design</span><span>Dev</span><span>Q/A</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase rv">
+        <div class="num">4</div>
+        <div>
+          <div class="tcode">T-0</div>
+          <h3>Sales Materials</h3>
+          <div class="tags">
+            <span>Deck</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="launch rv">
+  <img src="rocket.png" alt="">
+  <div class="tcode">T-0 &middot; Ignition</div>
+  <h2>LAUNCH</h2>
+</section>
+
+<section class="takeoffs">
+  <div class="wrap">
+    <h2 class="rv">Recent Takeoffs</h2>
+    <div class="log">
+      <div class="entry rv">
+        <div class="chip"><img src="flarion.png" alt="Flarion"></div>
+        <div>
+          <div class="ind">Industry: Data Processing</div>
+          <a class="url" href="https://www.flarion.io/" target="_blank" rel="noopener">www.flarion.io</a>
+          <p>Flarion powers data engines to do more, faster.</p>
+        </div>
+      </div>
+      <div class="entry rv">
+        <div class="chip"><img src="vocai.png" alt="Vocai"></div>
+        <div>
+          <div class="ind">Industry: Energy Tech</div>
+          <a class="url" href="https://www.vocai.tech/" target="_blank" rel="noopener">www.vocai.tech</a>
+          <p>Pioneering on-chip multi-gas sensing technology powered by AI for predictive Battery Lifecycle Management.</p>
+        </div>
+      </div>
+      <div class="entry rv">
+        <div class="chip"><img src="verax.png" alt="Verax"></div>
+        <div>
+          <div class="ind">Industry: AI</div>
+          <a class="url" href="https://www.verax.ai/" target="_blank" rel="noopener">www.verax.ai</a>
+          <p>Verax gives enterprises visibility &amp; control of their LLMs in production.</p>
+        </div>
+      </div>
+      <div class="entry rv">
+        <div class="chip"><img src="visionheight.png" alt="VisionHeight"></div>
+        <div>
+          <div class="ind">Industry: Cyber Security</div>
+          <a class="url" href="https://www.visionheight.com/" target="_blank" rel="noopener">www.visionheight.com</a>
+          <p>Intel that turns dark infra into autonomous security decisions.</p>
+        </div>
+      </div>
+      <div class="entry rv">
+        <div class="chip"><img src="elements.png" alt="Elements VC"></div>
+        <div>
+          <div class="ind">Industry: Venture Capital</div>
+          <a class="url" href="https://www.elements.vc/" target="_blank" rel="noopener">www.elements.vc</a>
+          <p>Elements VC backs disruptive deep tech energy &amp; climate technologies.</p>
+        </div>
+      </div>
+      <div class="entry rv">
+        <div class="chip"><img src="prometheux.png" alt="Prometheux"></div>
+        <div>
+          <div class="ind">Industry: Data</div>
+          <a class="url" href="https://prometheux.ai/" target="_blank" rel="noopener">prometheux.ai</a>
+          <p>Ontology Engine for enterprise AI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="fl rv">
+        <img src="b-white.png" alt="Bespoke">
+        <h2>Bespoke.</h2>
+        <p class="tag">A Boutique<br>Brand &amp; Marketing<br>Agency</p>
+        <span class="chip-yr">Since 2009</span>
+      </div>
+      <div class="fr rv">
+        <p class="big">Big goals? We match the energy.</p>
+        <a class="go" href="mailto:annebenyehuda@gmail.com"><span>Start a Project &rarr;</span></a>
+      </div>
+    </div>
+    <div class="contact rv">
+      <div class="nm">Anne Marie Ben-Yehuda</div>
+      <div class="rl">Creative Founder</div>
+      <a href="mailto:annebenyehuda@gmail.com">annebenyehuda@gmail.com</a><br>
+      <a href="tel:+972508333060">+972 050 833 3060</a><br>
+      <a href="tel:+12127310870">USA 212 731 0870</a>
+    </div>
+    <div class="copy">&copy;2025 Bespoke</div>
+  </div>
+</footer>
+
+<script>
+try{
+  document.documentElement.classList.add('js');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  }
+  var bar=document.getElementById('bar'),procket=document.getElementById('procket'),ticking=false;
+  function upd(){
+    ticking=false;
+    var h=document.documentElement;var max=h.scrollHeight-h.clientHeight;
+    var p=max>0?(h.scrollTop||document.body.scrollTop)/max:0;if(p>1)p=1;
+    if(bar)bar.style.width=(p*100)+'%';
+    if(procket)procket.style.left=(p*100)+'%';
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
+  upd();
+}catch(e){document.documentElement.classList.remove('js');}
+</script>
+</body>
+</html>
